@@ -24,7 +24,10 @@
     "@angular/router": "~16.0.0",
     "@angular/service-worker": "^16.0.5",
     "@auth0/auth0-angular": "^2.1.0",
+    "@ngxs/store": "^3.8.1",
     "@nx/angular": "16.3.2",
+    "immer": "^10.0.2",
+    "ngxs": "^2.0.0-rc.20",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.13.0"

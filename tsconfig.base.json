@@ -15,6 +15,10 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@socially/app/auth/data-access": [
+        "libs/app/auth/data-access/src/index.ts"
+      ],
+      "@socially/app/auth/util": ["libs/app/auth/util/src/index.ts"],
       "@socially/app/core/feature": ["libs/app/core/feature/src/index.ts"],
       "@socially/app/login/feature": ["libs/app/login/feature/src/index.ts"],
       "@socially/app/signup/feature": ["libs/app/signup/feature/src/index.ts"],
