@@ -4,4 +4,27 @@
     <button mat-raised-button color="primary">Signup</button>
     <h2>Welcome {{user.email}}</h2>
 </div> -->
-<h3>Welcome</h3>
+
+<div class="content">
+    <mat-card class="welcome-card">
+        <div #canvas></div>
+        <mat-card-content>
+          <p>
+            Welcome to Socially!<br>
+            This is a small passion project I've been working on to expand my knowledge of angular and other web technologies.<br>
+            Check out the repository below.<br>
+            Scroll down to see some more information about me!
+          </p>
+        </mat-card-content>
+        <mat-card-actions>
+            <div class="button-container">
+                <a mat-fab href="https://github.com/Adrian-Hawkins/socially" target="_blank" color="accent">
+                  <mat-icon>code</mat-icon>
+                </a>
+                <button mat-fab color="primary" (click)="share()">
+                  <mat-icon>share</mat-icon>
+                </button>
+            </div>
+        </mat-card-actions>
+      </mat-card>
+</div>
