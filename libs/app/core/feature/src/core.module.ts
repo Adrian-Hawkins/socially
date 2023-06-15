@@ -18,5 +18,4 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
   ],
   bootstrap: [CoreShell],
 })
-export class CoreModule {
-}
+export class CoreModule {}
