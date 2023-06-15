@@ -2,12 +2,12 @@
   "name": "socially",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
-  "prefix": "socially",
+  "prefix": "sc",
   "sourceRoot": "apps/socially/src",
   "tags": [],
   "targets": {
     "build": {
-      "executor": "@angular-devkit/build-angular:browser",
+      "executor": "@nrwl/angular:webpack-browser",
       "outputs": ["{options.outputPath}"],
       "options": {
         "outputPath": "dist/apps/socially",
@@ -15,9 +15,16 @@
         "main": "apps/socially/src/main.ts",
         "polyfills": ["zone.js"],
         "tsConfig": "apps/socially/tsconfig.app.json",
+        "inlineStyleLanguage": "scss",
         "assets": ["apps/socially/src/favicon.ico", "apps/socially/src/assets"],
         "styles": ["apps/socially/src/styles.scss"],
-        "scripts": []
+        "scripts": [],
+        "customWebpackConfig": {
+          "path": "apps/socially/webpack.config.js"
+        },
+        "allowedCommonJsDependencies": ["moment"],
+        "serviceWorker": true,
+        "ngswConfigPath": "apps/socially/ngsw-config.json"
       },
       "configurations": {
         "production": {
@@ -47,7 +54,7 @@
       "defaultConfiguration": "production"
     },
     "serve": {
-      "executor": "@angular-devkit/build-angular:dev-server",
+      "executor": "@nrwl/angular:webpack-dev-server",
       "configurations": {
         "production": {
           "browserTarget": "socially:build:production"
