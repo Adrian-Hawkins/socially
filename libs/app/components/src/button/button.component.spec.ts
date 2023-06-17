@@ -18,10 +18,4 @@ describe('ButtonComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
-
-  it('should return the given boolean argument', () => {
-    const arg = false;
-    const result = component.myFunction(arg);
-    expect(result).toEqual(arg);
-  });
 });

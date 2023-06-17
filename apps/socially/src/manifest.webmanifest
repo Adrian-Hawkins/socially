@@ -1,0 +1,24 @@
+{
+    "name": "Socially",
+    "short_name": "Socially",
+    "theme_color": "#20265f",
+    "background_color": "#ffffff",
+    "display": "standalone",
+    "scope": "./",
+    "id": "./",
+    "start_url": "./",
+    "capture_links": "existing_client_event",
+    "url_handlers": [
+      {
+        "origin": "https://socially.web.app/"
+      }
+    ],
+    "protocol_handlers": [
+      {
+        "protocol": "web+socially",
+        "url": "/%s"
+      }
+    ],
+    "icons": []
+  }
+  

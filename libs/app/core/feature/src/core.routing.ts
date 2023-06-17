@@ -23,6 +23,11 @@ const routes: Routes = [
     loadChildren: () =>
       import('@socially/app/signup/feature').then((m) => m.SignupModule),
   },
+  {
+    path: 'documentation',
+    loadChildren: () =>
+      import('@socially/app/docs/feature').then((m) => m.DocsModule),
+  }
 ];
 
 @NgModule({
